@@ -35,7 +35,9 @@ function Navbar({ onSearch }: NavbarProps) {
         {/* Logo */}
         <div className="logo flex items-center">
           <Image src="/assets/logo.png" alt="starflix" width={50} height={50} />
-          <h2 className="text-lg sm:text-xl font-medium ml-2">StarFlicks</h2>
+          <h2 className="text-lg sm:text-xl font-medium ml-2 cinzel-font">
+            StarFlicks
+          </h2>
         </div>
 
         {/* Search Bar */}
@@ -80,7 +82,7 @@ function Navbar({ onSearch }: NavbarProps) {
                       width={70}
                       height={70}
                     />
-                    <h2 className="text-xl font-medium ml-2 text-white">
+                    <h2 className="text-xl font-medium ml-2 text-white cinzel-font">
                       StarFlicks
                     </h2>
                   </div>

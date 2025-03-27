@@ -35,7 +35,13 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({ searchTerm }) => {
       setError(null);
       setMovieData(null);
 
-      const myAPIKey = "8ed4a10f";
+      const myAPIKey = process.env.NEXT_PUBLIC_OMDB_API_KEY;
+      if (!myAPIKey) {
+        setError("API key is missing!");
+        setLoading(false);
+        return;
+      }
+
       const url = `https://www.omdbapi.com/?apikey=${myAPIKey}&t=${searchTerm}`;
 
       try {
