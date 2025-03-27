@@ -18,7 +18,7 @@ interface MovieData {
   Plot: string;
   imdbRating: string;
   Poster: string;
-  Response: string; // API returns "False" if the movie is not found
+  Response: string;
   Error?: string;
 }
 
